@@ -1,0 +1,2 @@
+/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/CMakeLists.txt
+/home/alex/AndroidStudioProjects/CarBuddy/oboe/CMakeLists.txt

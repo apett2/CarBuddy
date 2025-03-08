@@ -1,0 +1,14 @@
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/native-lib.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/edit_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/rebuild_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/list_install_components.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/install.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/install/local.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/CMakeFiles/install/strip.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/oboe.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/edit_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/rebuild_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/list_install_components.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/install.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/install/local.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/RelWithDebInfo/705e1b29/x86_64/oboe-bin/CMakeFiles/install/strip.dir

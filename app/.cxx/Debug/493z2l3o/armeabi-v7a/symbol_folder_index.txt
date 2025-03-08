@@ -1,0 +1,1 @@
+/home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/armeabi-v7a

@@ -1,0 +1,1 @@
+/home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/x86_64

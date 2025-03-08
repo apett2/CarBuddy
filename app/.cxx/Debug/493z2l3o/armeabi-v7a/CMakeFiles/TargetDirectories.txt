@@ -1,0 +1,14 @@
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/native-lib.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/list_install_components.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/install.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/install/local.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/CMakeFiles/install/strip.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/oboe.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/edit_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/rebuild_cache.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/list_install_components.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/install.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/install/local.dir
+/home/alex/AndroidStudioProjects/CarBuddy/app/.cxx/Debug/493z2l3o/armeabi-v7a/oboe-bin/CMakeFiles/install/strip.dir

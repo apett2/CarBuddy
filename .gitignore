@@ -1,0 +1,14 @@
+# Android Studio files
+.idea/
+*.iml
+build/
+local.properties
+captures/
+
+# Gradle
+.gradle/
+gradle/
+
+# Native build
+cmake/
+externalNativeBuild/
