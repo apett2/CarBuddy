@@ -1,1 +1,24 @@
-/build
+# Android build files
+*.apk
+*.aar
+*.ap_
+*.aab
+build/
+.gradle/
+local.properties
+
+# Android Studio files
+.idea/
+*.iml
+captures/
+
+# Native build files
+externalNativeBuild/
+cmake/
+
+# Log files
+*.log
+
+# Miscellaneous
+*.keystore
+*.jks

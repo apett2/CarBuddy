@@ -26,8 +26,8 @@ ANDROID_PLATFORM:UNINITIALIZED=android-23
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/alex/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line
 
-//Android ABI
-CMAKE_ANDROID_ARCH_ABI:STRING=x86_64
+//No help, variable specified on the command line.
+CMAKE_ANDROID_ARCH_ABI:UNINITIALIZED=x86_64
 
 //No help, variable specified on the command line.
 CMAKE_ANDROID_NDK:UNINITIALIZED=/home/alex/Android/Sdk/ndk/25.1.8937393

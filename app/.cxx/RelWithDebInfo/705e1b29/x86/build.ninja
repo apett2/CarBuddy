@@ -53,7 +53,7 @@ build CMakeFiles/native-lib.dir/AudioEngine.cpp.o: CXX_COMPILER__native-lib_RelW
   DEFINES = -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles/native-lib.dir/AudioEngine.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC -std=gnu++17
-  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
+  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir
 
@@ -61,7 +61,7 @@ build CMakeFiles/native-lib.dir/kissfft/kiss_fft.c.o: C_COMPILER__native-lib_Rel
   DEFINES = -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles/native-lib.dir/kissfft/kiss_fft.c.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC
-  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
+  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir/kissfft
 
@@ -69,7 +69,7 @@ build CMakeFiles/native-lib.dir/kissfft/kiss_fftr.c.o: C_COMPILER__native-lib_Re
   DEFINES = -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles/native-lib.dir/kissfft/kiss_fftr.c.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC
-  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
+  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir/kissfft
 

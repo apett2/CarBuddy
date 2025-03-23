@@ -5,10 +5,13 @@
 #include <android/log.h>
 #include <pthread.h>
 #include <cmath>
+#include <thread>
+#include <chrono>
 
 #define LOG_TAG "AudioEngine"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
+#define LOGW(...) __android_log_print(ANDROID_LOG_WARN, LOG_TAG, __VA_ARGS__)
 
 static JavaVM* gJavaVM = nullptr;
 static pthread_mutex_t audioMutex = PTHREAD_MUTEX_INITIALIZER;
@@ -30,10 +33,6 @@ static JNIEnv* GetJNIEnv() {
     return env;
 }
 
-static void DetachCurrentThread() {
-    gJavaVM->DetachCurrentThread();
-}
-
 class AudioEngine : public oboe::AudioStreamCallback {
 private:
     oboe::ManagedStream inputStream;
@@ -48,9 +47,10 @@ private:
     JNIEnv* env;
     jobject javaObject;
     bool dataReady;
+    bool isStreamRunning;
 
 public:
-    AudioEngine(JNIEnv* env, jobject obj) : env(env), javaObject(obj ? env->NewGlobalRef(obj) : nullptr), dataReady(false) {
+    AudioEngine(JNIEnv* env, jobject obj) : env(env), javaObject(obj ? env->NewGlobalRef(obj) : nullptr), dataReady(false), isStreamRunning(false) {
         if (!javaObject) {
             LOGE("javaObject is null in AudioEngine constructor");
             return;
@@ -63,31 +63,13 @@ public:
         highFreqMagnitude = new float[1024];
         lowFreqBuffer = new float[22];
         highFreqBuffer = new float[1024];
-        for (int i = 0; i < 22; i++) {
-            lowFreqMagnitude[i] = 0.0f;
-            lowFreqBuffer[i] = 0.0f;
-        }
-        for (int i = 0; i < 1024; i++) {
-            highFreqMagnitude[i] = 0.0f;
-            highFreqBuffer[i] = 0.0f;
-        }
-
-        oboe::AudioStreamBuilder builder;
-        builder.setDirection(oboe::Direction::Input)
-                ->setPerformanceMode(oboe::PerformanceMode::LowLatency)
-                ->setSampleRate(44100)
-                ->setChannelCount(oboe::ChannelCount::Mono)
-                ->setFormat(oboe::AudioFormat::Float)
-                ->setCallback(this)
-                ->openManagedStream(inputStream);
-        inputStream->requestStart();
+        resetBuffers();
+        LOGI("AudioEngine constructed at %p", this);
     }
 
     ~AudioEngine() {
-        if (inputStream) {
-            inputStream->requestStop();
-            inputStream->close();
-        }
+        LOGI("Destroying AudioEngine at %p", this);
+        stopStream();
         kiss_fftr_free(fftCfg);
         delete[] fftOutput;
         delete[] audioBuffer;
@@ -96,29 +78,87 @@ public:
         delete[] lowFreqBuffer;
         delete[] highFreqBuffer;
         if (javaObject) {
-            env->DeleteGlobalRef(javaObject);
-        }
-        JNIEnv* currentEnv = GetJNIEnv();
-        if (currentEnv && gJavaVM) {
-            int getEnvStat = gJavaVM->GetEnv((void**)&currentEnv, JNI_VERSION_1_6); // Fixed typo: ¤tEnv -> currentEnv
-            if (getEnvStat == JNI_EDETACHED) {
-                LOGI("Thread already detached, skipping DetachCurrentThread");
-            } else if (getEnvStat == JNI_OK) {
-                gJavaVM->DetachCurrentThread();
-                LOGI("Thread detached successfully");
+            JNIEnv* currentEnv = GetJNIEnv();
+            if (currentEnv) {
+                currentEnv->DeleteGlobalRef(javaObject);
+                LOGI("Deleted global ref for javaObject");
             } else {
-                LOGE("Failed to check thread attachment status: %d", getEnvStat);
+                LOGE("Failed to get JNIEnv to delete javaObject ref");
             }
-        } else {
-            LOGE("No JNIEnv or JavaVM available for detachment");
         }
+    }
+
+    bool startStream() {
+        if (isStreamRunning) {
+            LOGI("Stream already running, skipping start");
+            return true;
+        }
+
+        oboe::AudioStreamBuilder builder;
+        builder.setDirection(oboe::Direction::Input)
+                ->setPerformanceMode(oboe::PerformanceMode::LowLatency)
+                ->setSampleRate(48000) // Changed to 48000 Hz, more commonly supported
+                ->setChannelCount(oboe::ChannelCount::Mono)
+                ->setFormat(oboe::AudioFormat::Float)
+                ->setCallback(this);
+
+        // Retry logic for stream opening
+        const int maxRetries = 3;
+        const int retryDelayMs = 500;
+        for (int attempt = 1; attempt <= maxRetries; attempt++) {
+            oboe::Result result = builder.openManagedStream(inputStream);
+            if (result == oboe::Result::OK) {
+                break;
+            }
+            LOGE("Attempt %d/%d: Failed to open audio stream: %s", attempt, maxRetries, oboe::convertToText(result));
+            if (attempt == maxRetries) {
+                return false;
+            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(retryDelayMs));
+        }
+
+        // Verify stream state before starting
+        if (!inputStream) {
+            LOGE("Audio stream is null after open attempt");
+            return false;
+        }
+
+        oboe::Result result = inputStream->requestStart();
+        if (result != oboe::Result::OK) {
+            LOGE("Failed to start audio stream: %s", oboe::convertToText(result));
+            inputStream->close();
+            return false;
+        }
+
+        isStreamRunning = true;
+        LOGI("Audio stream started successfully");
+        return true;
+    }
+
+    void stopStream() {
+        if (isStreamRunning && inputStream) {
+            oboe::Result result = inputStream->requestStop();
+            if (result != oboe::Result::OK) {
+                LOGE("Failed to stop audio stream: %s", oboe::convertToText(result));
+            }
+            result = inputStream->close();
+            if (result != oboe::Result::OK) {
+                LOGE("Failed to close audio stream: %s", oboe::convertToText(result));
+            }
+            isStreamRunning = false;
+            LOGI("Audio stream stopped and closed");
+        } else {
+            LOGI("No audio stream to stop or already stopped");
+        }
+        // Reset buffers to ensure no stale data
+        resetBuffers();
     }
 
     oboe::DataCallbackResult onAudioReady(oboe::AudioStream* stream, void* audioData, int32_t numFrames) override {
         float* input = static_cast<float*>(audioData);
         int32_t totalSamples = numFrames * stream->getChannelCount();
 
-        float gain = 20.0f;
+        float gain = 5.0f; // Reduced gain from 20.0f to 5.0f to prevent saturation
         for (int i = 0; i < totalSamples && i < sampleSize; i++) {
             audioBuffer[i] = input[i] * gain;
         }
@@ -136,26 +176,27 @@ public:
     }
 
     void processFrequencies() {
-        const float sampleRate = 44100.0f;
-        const float binWidth = sampleRate / sampleSize; // ~21.53 Hz/bin
-        const int lowFreqBins = 6; // ~40-129 Hz (bins 2-6)
-        const int highFreqStart = 7; // ~150 Hz+
-        const float lowSensitivity = 200.0f; // Reduced from 500.0f
-        const float highSensitivity = 50.0f; // Reduced from 100.0f
+        const float sampleRate = 48000.0f; // Updated to match new sample rate
+        const float binWidth = sampleRate / sampleSize; // ~23.44 Hz/bin
+        const int lowFreqBins = 6; // ~47-140 Hz (bins 2-6)
+        const int highFreqStart = 7; // ~164 Hz+
+        const float lowSensitivity = 200.0f;
+        const float highSensitivity = 50.0f;
         float highFreqMax = 0.0f;
 
         for (int i = 1; i < sampleSize / 2; i++) {
             float real = fftOutput[i].r;
             float imag = fftOutput[i].i;
             float magnitude = sqrtf(real * real + imag * imag) / sampleSize;
-            if (i >= 2 && i < lowFreqBins) { // Narrow to 40-129 Hz
+            if (i >= 2 && i < lowFreqBins) { // 47-140 Hz
                 magnitude *= lowSensitivity;
             } else if (i >= highFreqStart && (i - highFreqStart) < 1024) {
                 magnitude *= highSensitivity;
             } else {
-                magnitude = 0.0f; // Ignore outside ranges
+                magnitude = 0.0f;
             }
-            magnitude = std::min(magnitude, 1000.0f);
+            // Lower cap to prevent saturation
+            magnitude = std::min(magnitude, 50.0f);
 
             if (i >= 2 && i - 2 < 22 && i < lowFreqBins) {
                 lowFreqMagnitude[i - 2] = magnitude;
@@ -164,8 +205,7 @@ public:
                 highFreqMax = std::max(highFreqMax, magnitude);
             }
         }
-        LOGI("LowFreq[0]: %f, HighFreq[0]: %f, HighFreq[Max]: %f",
-             lowFreqMagnitude[0], highFreqMagnitude[0], highFreqMax);
+        LOGI("LowFreq[0]: %f, HighFreq[0]: %f, HighFreq[Max]: %f", lowFreqMagnitude[0], highFreqMagnitude[0], highFreqMax);
     }
 
     void processFrequenciesForJNI(JNIEnv* env, jfloatArray lowFreq, jfloatArray highFreq) {
@@ -175,11 +215,32 @@ public:
         jfloat* lowFreqData = env->GetFloatArrayElements(lowFreq, nullptr);
         jfloat* highFreqData = env->GetFloatArrayElements(highFreq, nullptr);
 
-        pthread_mutex_lock(&audioMutex);
-        while (!dataReady) {
-            pthread_cond_wait(&audioCond, &audioMutex); // Wait for fresh data
+        if (!lowFreqData || !highFreqData) {
+            LOGE("Failed to get float array elements: lowFreqData=%p, highFreqData=%p", lowFreqData, highFreqData);
+            if (lowFreqData) env->ReleaseFloatArrayElements(lowFreq, lowFreqData, JNI_ABORT);
+            if (highFreqData) env->ReleaseFloatArrayElements(highFreq, highFreqData, JNI_ABORT);
+            return;
         }
-        if (lowFreqData && highFreqData) {
+
+        pthread_mutex_lock(&audioMutex);
+        const int maxWaitMs = 200; // Increased timeout to 200ms
+        struct timespec ts;
+        clock_gettime(CLOCK_REALTIME, &ts);
+        ts.tv_sec += maxWaitMs / 1000;
+        ts.tv_nsec += (maxWaitMs % 1000) * 1000000;
+        if (ts.tv_nsec >= 1000000000) {
+            ts.tv_sec += 1;
+            ts.tv_nsec -= 1000000000;
+        }
+
+        int waitResult = pthread_cond_timedwait(&audioCond, &audioMutex, &ts);
+        if (waitResult == ETIMEDOUT) {
+            LOGW("Timed out waiting for dataReady, using stale data");
+        } else if (waitResult != 0) {
+            LOGE("pthread_cond_timedwait failed with error: %d", waitResult);
+        }
+
+        if (dataReady) {
             for (int i = 0; i < lowFreqBins; i++) {
                 lowFreqData[i] = std::max(0.0f, std::min(lowFreqBuffer[i], 1000.0f));
             }
@@ -189,12 +250,27 @@ public:
             LOGI("JNI Transfer - LowFreq[0]: %f, HighFreq[0]: %f", lowFreqData[0], highFreqData[0]);
             dataReady = false; // Reset after transfer
         } else {
-            LOGE("Failed to get float array elements: lowFreqData=%p, highFreqData=%p", lowFreqData, highFreqData);
+            LOGW("No fresh data available, buffers remain unchanged");
         }
         pthread_mutex_unlock(&audioMutex);
 
-        if (lowFreqData) env->ReleaseFloatArrayElements(lowFreq, lowFreqData, 0);
-        if (highFreqData) env->ReleaseFloatArrayElements(highFreq, highFreqData, 0);
+        env->ReleaseFloatArrayElements(lowFreq, lowFreqData, 0);
+        env->ReleaseFloatArrayElements(highFreq, highFreqData, 0);
+    }
+
+    void resetBuffers() {
+        pthread_mutex_lock(&audioMutex);
+        for (int i = 0; i < 22; i++) {
+            lowFreqMagnitude[i] = 0.0f;
+            lowFreqBuffer[i] = 0.0f;
+        }
+        for (int i = 0; i < 1024; i++) {
+            highFreqMagnitude[i] = 0.0f;
+            highFreqBuffer[i] = 0.0f;
+        }
+        dataReady = false;
+        pthread_mutex_unlock(&audioMutex);
+        LOGI("Buffers reset");
     }
 };
 
@@ -206,6 +282,7 @@ JNI_OnLoad(JavaVM* vm, void* reserved) {
         LOGE("Failed to get JNIEnv in JNI_OnLoad");
         return -1;
     }
+    LOGI("JNI_OnLoad completed, JavaVM stored");
     return JNI_VERSION_1_6;
 }
 
@@ -216,17 +293,26 @@ Java_com_alexpettit_carbuddy_MainActivity_startAudioEngine(JNIEnv* env, jobject 
         return 0;
     }
     AudioEngine* engine = new AudioEngine(env, instance);
-    if (ptrArray && env->GetArrayLength(ptrArray) > 0) {
-        jlong* ptr = env->GetLongArrayElements(ptrArray, nullptr);
-        *ptr = reinterpret_cast<jlong>(engine);
-        env->ReleaseLongArrayElements(ptrArray, ptr, 0);
+    if (engine && engine->startStream()) {
+        if (ptrArray && env->GetArrayLength(ptrArray) > 0) {
+            jlong* ptr = env->GetLongArrayElements(ptrArray, nullptr);
+            *ptr = reinterpret_cast<jlong>(engine);
+            env->ReleaseLongArrayElements(ptrArray, ptr, 0);
+        }
+        jclass clazz = env->GetObjectClass(instance);
+        jfieldID fieldId = env->GetFieldID(clazz, "audioEnginePtr", "J");
+        if (fieldId) {
+            env->SetLongField(instance, fieldId, reinterpret_cast<jlong>(engine));
+        } else {
+            LOGE("Failed to set audioEnginePtr field");
+        }
+        LOGI("AudioEngine started, ptr=%p", engine);
+        return reinterpret_cast<jlong>(engine);
+    } else {
+        LOGE("Failed to initialize AudioEngine");
+        delete engine;
+        return 0;
     }
-    jclass clazz = env->GetObjectClass(instance);
-    jfieldID fieldId = env->GetFieldID(clazz, "audioEnginePtr", "J");
-    if (fieldId) {
-        env->SetLongField(instance, fieldId, reinterpret_cast<jlong>(engine));
-    }
-    return reinterpret_cast<jlong>(engine);
 }
 
 extern "C" JNIEXPORT void JNICALL
@@ -235,11 +321,21 @@ Java_com_alexpettit_carbuddy_MainActivity_stopAudioEngine(JNIEnv* env, jobject i
         LOGE("Instance is null in stopAudioEngine");
         return;
     }
-    delete reinterpret_cast<AudioEngine*>(ptr);
-    jclass clazz = env->GetObjectClass(instance);
-    jfieldID fieldId = env->GetFieldID(clazz, "audioEnginePtr", "J");
-    if (fieldId) {
-        env->SetLongField(instance, fieldId, 0L);
+    AudioEngine* engine = reinterpret_cast<AudioEngine*>(ptr);
+    if (engine) {
+        LOGI("Stopping AudioEngine at %p", engine);
+        engine->stopStream();
+        delete engine;
+        jclass clazz = env->GetObjectClass(instance);
+        jfieldID fieldId = env->GetFieldID(clazz, "audioEnginePtr", "J");
+        if (fieldId) {
+            env->SetLongField(instance, fieldId, 0L);
+            LOGI("audioEnginePtr reset to 0");
+        } else {
+            LOGE("Failed to reset audioEnginePtr field");
+        }
+    } else {
+        LOGE("AudioEngine pointer is null in stopAudioEngine");
     }
 }
 
@@ -254,5 +350,19 @@ Java_com_alexpettit_carbuddy_MainActivity_updateFrequencies(JNIEnv* env, jobject
         engine->processFrequenciesForJNI(env, lowFreq, highFreq);
     } else {
         LOGE("AudioEngine instance not found for updateFrequencies");
+    }
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_alexpettit_carbuddy_MainActivity_resetBuffers(JNIEnv* env, jobject instance, jlong ptr) {
+    if (!instance) {
+        LOGE("Instance is null in resetBuffers");
+        return;
+    }
+    AudioEngine* engine = reinterpret_cast<AudioEngine*>(ptr);
+    if (engine) {
+        engine->resetBuffers();
+    } else {
+        LOGE("AudioEngine instance not found for resetBuffers");
     }
 }

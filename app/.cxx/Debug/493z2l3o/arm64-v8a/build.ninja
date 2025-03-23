@@ -53,25 +53,31 @@ build CMakeFiles/native-lib.dir/AudioEngine.cpp.o: CXX_COMPILER__native-lib_Debu
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles/native-lib.dir/AudioEngine.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17
-  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
+  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir
+  TARGET_COMPILE_PDB = CMakeFiles/native-lib.dir/
+  TARGET_PDB = /home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/arm64-v8a/libnative-lib.pdb
 
 build CMakeFiles/native-lib.dir/kissfft/kiss_fft.c.o: C_COMPILER__native-lib_Debug /home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft/kiss_fft.c || cmake_object_order_depends_target_native-lib
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles/native-lib.dir/kissfft/kiss_fft.c.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC
-  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
+  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir/kissfft
+  TARGET_COMPILE_PDB = CMakeFiles/native-lib.dir/
+  TARGET_PDB = /home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/arm64-v8a/libnative-lib.pdb
 
 build CMakeFiles/native-lib.dir/kissfft/kiss_fftr.c.o: C_COMPILER__native-lib_Debug /home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft/kiss_fftr.c || cmake_object_order_depends_target_native-lib
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles/native-lib.dir/kissfft/kiss_fftr.c.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC
-  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
+  INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/../../../oboe/include -I/home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/kissfft -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir/kissfft
+  TARGET_COMPILE_PDB = CMakeFiles/native-lib.dir/
+  TARGET_PDB = /home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/arm64-v8a/libnative-lib.pdb
 
 
 # =============================================================================
@@ -90,8 +96,9 @@ build /home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debu
   PRE_LINK = :
   SONAME = libnative-lib.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = CMakeFiles/native-lib.dir/
   TARGET_FILE = /home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/arm64-v8a/libnative-lib.so
-  TARGET_PDB = native-lib.so.dbg
+  TARGET_PDB = /home/alex/AndroidStudioProjects/CarBuddy/app/build/intermediates/cxx/Debug/493z2l3o/obj/arm64-v8a/libnative-lib.pdb
 
 
 #############################################
@@ -179,6 +186,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/aaudio
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/aaudio/AudioStreamAAudio.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -187,6 +196,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o: CXX_COMPI
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/aaudio
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/AdpfWrapper.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/AdpfWrapper.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -195,6 +206,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/AdpfWrapper.cpp.o: CXX_COMPILER__o
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/AudioSourceCaller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -203,6 +216,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o: CXX_COMPI
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/AudioStream.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -211,6 +226,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o: CXX_COMPILER__o
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/AudioStreamBuilder.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -219,6 +236,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o: CXX_COMP
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/DataConversionFlowGraph.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -227,6 +246,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o: CXX
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/FilterAudioStream.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -235,6 +256,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o: CXX_COMPI
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/FixedBlockAdapter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -243,6 +266,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o: CXX_COMPI
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/FixedBlockReader.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -251,6 +276,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/FixedBlockWriter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -259,6 +286,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/LatencyTuner.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -267,6 +296,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/OboeExtensions.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/OboeExtensions.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -275,6 +306,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/OboeExtensions.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/SourceFloatCaller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -283,6 +316,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o: CXX_COMPI
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/SourceI16Caller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -291,6 +326,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o: CXX_COMPILE
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/SourceI24Caller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -299,6 +336,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp.o: CXX_COMPILE
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/SourceI32Caller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -307,6 +346,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o: CXX_COMPILE
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/Utilities.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -315,6 +356,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o: CXX_COMPILER__obo
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/QuirksManager.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -323,6 +366,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/fifo/FifoBuffer.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -331,6 +376,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o: CXX_COMPILER__oboe
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/fifo
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/fifo/FifoController.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -339,6 +386,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/fifo
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/fifo/FifoControllerBase.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -347,6 +396,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/fifo
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/fifo/FifoControllerIndirect.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -355,6 +406,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o: CXX_CO
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/fifo
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/FlowGraphNode.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -363,6 +416,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/ChannelCountConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -371,6 +426,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/ChannelCountConverter.cpp.o: CX
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/ClipToRange.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -379,6 +436,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/Limiter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/Limiter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -387,6 +446,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/Limiter.cpp.o: CXX_COMPILER__ob
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/ManyToMultiConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -395,6 +456,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o: CXX
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MonoBlend.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/MonoBlend.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -403,6 +466,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MonoBlend.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/MonoToMultiConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -411,6 +476,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o: CXX
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MultiToManyConverter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/MultiToManyConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -419,6 +486,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MultiToManyConverter.cpp.o: CXX
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/MultiToMonoConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -427,6 +496,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/MultiToMonoConverter.cpp.o: CXX
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/RampLinear.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -435,6 +506,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SampleRateConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -443,6 +516,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o: CXX_
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SinkFloat.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -451,6 +526,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SinkI16.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -459,6 +536,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o: CXX_COMPILER__ob
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SinkI24.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -467,6 +546,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o: CXX_COMPILER__ob
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI32.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SinkI32.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -475,6 +556,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI32.cpp.o: CXX_COMPILER__ob
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI8_24.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SinkI8_24.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -483,6 +566,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SinkI8_24.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SourceFloat.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -491,6 +576,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SourceI16.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -499,6 +586,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SourceI24.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -507,6 +596,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI32.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SourceI32.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -515,6 +606,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI32.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI8_24.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/SourceI8_24.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -523,6 +616,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/SourceI8_24.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/IntegerRatio.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -531,6 +626,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o: C
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/LinearResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -539,6 +636,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -547,6 +646,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -555,6 +656,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cp
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -563,6 +666,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMon
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -571,6 +676,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerSte
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/SincResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -579,6 +686,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o: 
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -587,6 +696,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.c
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/flowgraph/resampler
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/AudioInputStreamOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -595,6 +706,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o: 
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -603,6 +716,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o:
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/AudioStreamBuffered.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -611,6 +726,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o: CXX_C
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/AudioStreamOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -619,6 +736,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o: CXX_C
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/EngineOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -627,6 +746,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/OpenSLESUtilities.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -635,6 +756,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o: CXX_COM
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/opensles/OutputMixerOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -643,6 +766,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o: CXX_C
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/opensles
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/StabilizedCallback.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -651,6 +776,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o: CXX_COMP
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/Trace.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/Trace.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -659,6 +786,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/Trace.cpp.o: CXX_COMPILER__oboe_De
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 build oboe-bin/CMakeFiles/oboe.dir/src/common/Version.cpp.o: CXX_COMPILER__oboe_Debug /home/alex/AndroidStudioProjects/CarBuddy/oboe/src/common/Version.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
@@ -667,6 +796,8 @@ build oboe-bin/CMakeFiles/oboe.dir/src/common/Version.cpp.o: CXX_COMPILER__oboe_
   INCLUDES = -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/src -I/home/alex/AndroidStudioProjects/CarBuddy/oboe/include
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   OBJECT_FILE_DIR = oboe-bin/CMakeFiles/oboe.dir/src/common
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 
 # =============================================================================
@@ -681,8 +812,9 @@ build oboe-bin/liboboe.a: CXX_STATIC_LIBRARY_LINKER__oboe_Debug oboe-bin/CMakeFi
   OBJECT_DIR = oboe-bin/CMakeFiles/oboe.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = oboe-bin/CMakeFiles/oboe.dir/oboe.pdb
   TARGET_FILE = oboe-bin/liboboe.a
-  TARGET_PDB = oboe.a.dbg
+  TARGET_PDB = oboe-bin/liboboe.pdb
 
 
 #############################################
@@ -784,14 +916,14 @@ build oboe-bin/all: phony oboe-bin/liboboe.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android-legacy.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/flags.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Clang.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Initialize.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/platforms.cmake /home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/CMakeLists.txt /home/alex/AndroidStudioProjects/CarBuddy/oboe/CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompilerABI.c /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystem.cmake.in /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android/Determine-Compiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android-legacy.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/flags.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Clang.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Determine.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Initialize.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Determine-Compiler.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/platforms.cmake /home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/CMakeLists.txt /home/alex/AndroidStudioProjects/CarBuddy/oboe/CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android-legacy.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/flags.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Clang.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Initialize.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/platforms.cmake /home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/CMakeLists.txt /home/alex/AndroidStudioProjects/CarBuddy/oboe/CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake: phony
+build /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompilerABI.c /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystem.cmake.in /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/GNU.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Clang.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-C.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine-CXX.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Determine.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android-Initialize.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Android/Determine-Compiler.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/Linux.cmake /home/alex/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android-legacy.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/flags.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Clang.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Determine.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Initialize.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Determine-Compiler.cmake /home/alex/Android/Sdk/ndk/25.1.8937393/build/cmake/platforms.cmake /home/alex/AndroidStudioProjects/CarBuddy/app/src/main/cpp/CMakeLists.txt /home/alex/AndroidStudioProjects/CarBuddy/oboe/CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake: phony
 
 
 #############################################
