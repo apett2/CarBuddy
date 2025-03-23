@@ -14,7 +14,7 @@ Disclaimer: this app may cause distraction while driving. Use cautiously at your
 ## Requirements
 - Android Studio
 - Min SDK: 23
-- ACRCloud API keys (sign up at [ACRCloud](https://www.acrcloud.com/))
+- ACRCloud API keys (sign up at [ACRCloud](https://www.acrcloud.com/)) Optional, if SongID feature is desired.
 
 ## Setup
 1. Clone the repo: `git clone https://github.com/yourusername/CarBuddy.git`
