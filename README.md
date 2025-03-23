@@ -25,9 +25,9 @@ Disclaimer: this app may cause distraction while driving. Use cautiously at your
 OR 
 
 1. Download the APK from the releases page and side load on your Android phone:
-2. Allow Installation
+2. Allow Installation: 
 Go to Settings > Apps > Three dots in the top right corner > Special access > Install unknown apps. Find your file manager or browser (e.g., My Files, Chrome), and toggle on Allow from this source.
-4. Install the App
+4. Install the App: 
 Open your file manager or downloads app, tap CarBuddy.apk, and select Install. If prompted about unknown apps, tap OK or Install anyway. Scan app for safety if prompted. 
 5. Secure Your Device
 After installation, go back to Settings > Apps > Three dots in the top right corner > Special access > Install unknown apps and toggle off the permission you enabled.
